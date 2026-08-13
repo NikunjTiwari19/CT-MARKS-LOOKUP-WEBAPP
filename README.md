@@ -88,7 +88,7 @@ The system should collect only the information required from each user.
 * Login credentials
 * Subject / CT selection for viewing records
 
-### HOD / Authorized Authority
+### HOD
 
 * Login credentials
 * Class / Section
