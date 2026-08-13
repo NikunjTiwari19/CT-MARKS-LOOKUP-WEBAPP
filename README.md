@@ -32,7 +32,7 @@ The system will provide different functionalities according to the user's role.
 * View calculated totals, percentages, and grades where applicable.
 * Access their academic records without being able to modify marks.
 
-### HOD / Authorized Authority
+### HOD
 
 * Monitor marks entered by faculty.
 * Review relevant academic records.
@@ -41,23 +41,54 @@ The system will provide different functionalities according to the user's role.
 
 ## 3. UI Flow
 
-The interface should follow a simple and consistent flow for each type of user.
+The interface should follow a simple and consistent flow based on the user's role.
 
-**Login → Authentication → Role Verification → Role-Based Dashboard → Select Required Function → Enter/View Data → Validation → Confirmation → Save/Display Result**
+```text
+                              LOGIN
+                                ↓
+                         AUTHENTICATION
+                                ↓
+                        ROLE VERIFICATION
+                                ↓
+                     ROLE-BASED DASHBOARD
+                                ↓
+       ┌──────────────┬──────────────┬──────────────┬──────────────┐
+       ↓              ↓              ↓              ↓
+     ADMIN         FACULTY          HOD          STUDENT
+       ↓              ↓              ↓              ↓
+ Manage Users      Select Class   Monitor CT     Select Subject /
+ & Roles           & Subject      Marks          CT
+       ↓              ↓              ↓              ↓
+ Manage Classes,   Select CT      Review         View CT Marks
+ Subjects,         ↓              Academic          ↓
+ Semesters &       Enter /       Records        View Calculated
+ Sessions          Update            ↓             Result
+       ↓            Marks        Performance
+ Control Access       ↓          Reports
+ & Permissions    Validate          ↓
+       ↓            Marks       Provide
+ Save / Update       ↓          Oversight
+       ↓           Review
+ Confirmation        ↓
+                    Submit
+                       ↓
+                  Confirmation
+       └──────────────┴──────────────┴──────────────┘
+                              ↓
+                       APPLICATION LOGIC
+                              ↓
+                           DATABASE
+                              ↓
+                   SAVE / RETRIEVE DATA
+                              ↓
+                            OUTPUT
+```
 
-### Faculty Flow
+### General Flow
 
-**Login → Faculty Dashboard → Select Class → Select Subject → Select CT → Enter Marks → Validate Marks → Review → Submit → Confirmation**
+**Login → Authentication → Role Verification → Role-Based Dashboard → Role-Specific Function → Validation / Review → Database Operation → Output**
 
-### Student Flow
-
-**Login → Student Dashboard → Select Subject/CT → View Marks → View Calculated Result**
-
-### Admin Flow
-
-**Login → Admin Dashboard → Manage Users / Classes / Subjects / Sessions → Perform Required Action → Save → Confirmation**
-
-The UI should minimize unnecessary navigation and provide clear feedback after important actions such as saving, updating, or submitting marks.
+The UI should minimize unnecessary navigation and provide clear feedback after important actions such as saving, updating, submitting, or viewing academic records.
 
 ## 4. User Input
 
@@ -113,4 +144,6 @@ The application is designed to address the following issues:
 
 ## 6. Expected Outcome
 
-The proposed CT-Marks Web App will provide a centralized platform through which authorized faculty can efficiently manage CT marks while students can securely view their academic records. Automated calculations, input validation, role-based access, and minimal user input will help make the overall process **faster, more reliable, secure, and less prone to human error**.
+The proposed CT-Marks Web App will provide a centralized platform through which authorized faculty can efficiently manage CT marks while students can securely view their academic records. The Admin will manage system-level information and access, while the HOD will monitor and review academic records.
+
+Automated calculations, input validation, role-based access, and minimal user input will help make the overall process **faster, more reliable, secure, and less prone to human error**.
