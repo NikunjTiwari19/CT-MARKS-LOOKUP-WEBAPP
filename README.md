@@ -2,7 +2,7 @@
 
 ## 1. Problem Statement
 
-The existing process of managing Continuous Test (CT) marks can be time-consuming and error-prone due to incorrect data entry, manual calculations, accidental submission, and possible data loss. Complex calculation procedures and the lack of a centralized platform can make academic record management difficult for both faculty and students. Furthermore, inadequate transparency, improper access control, and security vulnerabilities may affect the reliability and confidentiality of academic records.
+The existing process of managing Class Test (CT) marks can be time-consuming and error-prone due to incorrect data entry, manual calculations, accidental submission, and possible data loss. Complex calculation procedures and the lack of a centralized platform can make academic record management difficult for both faculty and students. Furthermore, inadequate transparency, improper access control, and security vulnerabilities may affect the reliability and confidentiality of academic records.
 
 Therefore, the CT-Marks Web App aims to provide a **secure, centralized, user-friendly, and role-based platform** for managing CT marks, reducing manual effort and minimizing human errors through automated calculations, validation, and controlled access.
 
