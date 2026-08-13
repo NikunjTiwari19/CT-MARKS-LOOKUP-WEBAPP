@@ -135,11 +135,11 @@ Manage user permissions.
 
 Student ID / Roll Number, Password, Subject Selection, CT Selection, Query/Complain
   
-### FACULTY
+### FACULTY INPUT
 
 Faculty ID / Email, Password, CT Selection, Excel/CSV Upload, Marksheet Scan/Image, Corrections Remarks   
 
-### HOD
+### HOD INPUT
 
 HOD ID / Email, Password, Faculty/Subject/CT Selection, Approval/Rejection, Correction Request, Remarks  
 
