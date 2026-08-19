@@ -214,4 +214,5 @@ management system.
 A web-based system to manage, display, and analyze Class Test (CT) marks of students, with support for revaluation requests and role-based access for Students, Subject Teachers, Class Incharges, and the HOD.
 
 ---
+**THANK YOU**
 
