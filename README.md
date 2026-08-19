@@ -147,3 +147,5 @@ The application is designed to address the following issues:
 The proposed CT-Marks Web App will provide a centralized platform through which authorized faculty can efficiently manage CT marks while students can securely view their academic records. The Admin will manage system-level information and access, while the HOD will monitor and review academic records.
 
 Automated calculations, input validation, role-based access, and minimal user input will help make the overall process **faster, more reliable, secure, and less prone to human error**.
+
+**THANK YOU**
